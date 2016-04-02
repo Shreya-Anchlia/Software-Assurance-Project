@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="10.0" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">$(FxCopDir)\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded, Good, Noise" NewOnly="False" />
+   <Report Status="Active, Good, Noise" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <AssemblyReferenceDirectories>
+   <Directory>\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\POC_SPCodeAnalyzer\bin\Debug\</Directory>
+  </AssemblyReferenceDirectories>
+  <Target Name="\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\Final POC\POC_SPCodeAnalysis\POC_SPAnalysisEngine\bin\Debug\POC_SPAnalysisEngine.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\Final POC\POC_SPCodeAnalysis\POC_SPReportingEngine\bin\Debug\POC_SPReportingEngine.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\Final POC\POC_SPCodeAnalysis\POC_SPRuleEngine\bin\Debug\POC_SPRuleEngine.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\Final POC\POC_SPCodeAnalysis\POC_SPRuleEngine\obj\Debug\POC_SPRuleEngine.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityTransparencyRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="10.0">
+  <Namespaces>
+   <Namespace Name="POC_SPAnalysisEngine">
+    <Messages>
+     <Message Id="POC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+      <Issue Name="Namespace">
+       <Item>POC</Item>
+       <Item>POC_SPAnalysisEngine</Item>
+       <Item>Poc</Item>
+      </Issue>
+     </Message>
+     <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2014-06-09 05:51:12Z">
+      <Issue Name="Namespace">
+       <Item>POC_SPAnalysisEngine</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="POC_SPReportingEngine">
+    <Messages>
+     <Message Id="POC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+      <Issue Name="Namespace">
+       <Item>POC</Item>
+       <Item>POC_SPReportingEngine</Item>
+       <Item>Poc</Item>
+      </Issue>
+     </Message>
+     <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2014-06-09 05:51:12Z">
+      <Issue Name="Namespace">
+       <Item>POC_SPReportingEngine</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+   <Namespace Name="POC_SPRuleEngine">
+    <Messages>
+     <Message Id="POC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+      <Issue Name="Namespace">
+       <Item>POC</Item>
+       <Item>POC_SPRuleEngine</Item>
+       <Item>Poc</Item>
+      </Issue>
+     </Message>
+     <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2014-06-09 05:51:12Z">
+      <Issue Name="Namespace">
+       <Item>POC_SPRuleEngine</Item>
+      </Issue>
+     </Message>
+    </Messages>
+   </Namespace>
+  </Namespaces>
+  <Targets>
+   <Target Name="\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\Final POC\POC_SPCodeAnalysis\POC_SPAnalysisEngine\bin\Debug\POC_SPAnalysisEngine.dll">
+    <Modules>
+     <Module Name="poc_spanalysisengine.dll">
+      <Messages>
+       <Message Id="POC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+        <Issue Name="Assembly">
+         <Item>POC</Item>
+         <Item>'POC_SPAnalysisEngine.dll'</Item>
+         <Item>Poc</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2014-06-09 05:51:12Z">
+        <Issue Name="Assembly">
+         <Item>'POC_SPAnalysisEngine.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2014-06-09 05:51:12Z">
+        <Issue>
+         <Item>'POC_SPAnalysisEngine.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Created="2014-06-09 05:51:12Z">
+        <Issue>
+         <Item>'POC_SPAnalysisEngine.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="POC_SPAnalysisEngine">
+        <Types>
+         <Type Name="ExtractWSP">
+          <Messages>
+           <Message Id="WSP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+            <Issue Name="Type">
+             <Item>WSP</Item>
+             <Item>'ExtractWSP'</Item>
+             <Item>Wsp</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\Final POC\POC_SPCodeAnalysis\POC_SPReportingEngine\bin\Debug\POC_SPReportingEngine.dll">
+    <Modules>
+     <Module Name="poc_spreportingengine.dll">
+      <Messages>
+       <Message Id="POC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+        <Issue Name="Assembly">
+         <Item>POC</Item>
+         <Item>'POC_SPReportingEngine.dll'</Item>
+         <Item>Poc</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2014-06-09 05:51:12Z">
+        <Issue Name="Assembly">
+         <Item>'POC_SPReportingEngine.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2014-06-09 05:51:12Z">
+        <Issue>
+         <Item>'POC_SPReportingEngine.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="POC_SPReportingEngine">
+        <Types>
+         <Type Name="Report">
+          <Members>
+           <Member Name="#GetChildNodeText(System.String,System.Xml.XmlNode)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2014-06-09 05:51:12Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'Report.GetChildNodeText(string, XmlNode)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Xml.XmlNode" TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059" Created="2014-06-09 05:51:12Z">
+              <Issue Name="Xml">
+               <Item>'Report.GetChildNodeText(string, XmlNode)'</Item>
+               <Item>'XmlNode'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#InputXMLFile">
+            <Messages>
+             <Message Id="XML" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+              <Issue Name="Member">
+               <Item>XML</Item>
+               <Item>'Report.InputXMLFile'</Item>
+               <Item>Xml</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Report+Rule">
+          <Messages>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Created="2014-06-09 05:51:12Z">
+            <Issue>
+             <Item>'Report.Rule'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#listrule">
+            <Messages>
+             <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Created="2014-06-09 05:51:12Z">
+              <Issue>
+               <Item>'Report.Rule.listrule'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Created="2014-06-09 05:51:12Z">
+              <Issue>
+               <Item>'List&lt;Report.Rule&gt;'</Item>
+               <Item>'Report.Rule.listrule'</Item>
+              </Issue>
+             </Message>
+             <Message Id="listrule" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+              <Issue Name="Member">
+               <Item>listrule</Item>
+               <Item>'Report.Rule.listrule'</Item>
+               <Item>Listrule</Item>
+              </Issue>
+             </Message>
+             <Message Id="listrule" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-09 05:51:12Z">
+              <Issue Name="Member">
+               <Item>listrule</Item>
+               <Item>'Report.Rule.listrule'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\Final POC\POC_SPCodeAnalysis\POC_SPRuleEngine\bin\Debug\POC_SPRuleEngine.dll">
+    <Modules>
+     <Module Name="poc_spruleengine.dll">
+      <Messages>
+       <Message Id="POC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+        <Issue Name="Assembly">
+         <Item>POC</Item>
+         <Item>'POC_SPRuleEngine.dll'</Item>
+         <Item>Poc</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2014-06-09 05:51:12Z">
+        <Issue Name="Assembly">
+         <Item>'POC_SPRuleEngine.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2014-06-09 05:51:12Z">
+        <Issue>
+         <Item>'POC_SPRuleEngine.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="\\IN-BWKS02\Preeti\1305-AIUS-SPCODAT\SP Code Analyzer POC\Final POC\POC_SPCodeAnalysis\POC_SPRuleEngine\obj\Debug\POC_SPRuleEngine.dll">
+    <Modules>
+     <Module Name="poc_spruleengine.dll">
+      <Messages>
+       <Message Id="POC" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+        <Issue Name="Assembly">
+         <Item>POC</Item>
+         <Item>'POC_SPRuleEngine.dll'</Item>
+         <Item>Poc</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2014-06-09 05:51:12Z">
+        <Issue Name="Assembly">
+         <Item>'POC_SPRuleEngine.dll'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2014-06-09 05:51:12Z">
+        <Issue>
+         <Item>'POC_SPRuleEngine.dll'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="POC_SPRuleEngine">
+        <Types>
+         <Type Name="ExecuteCommand">
+          <Members>
+           <Member Name="#FxCopCommandFile">
+            <Messages>
+             <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Created="2014-06-09 05:51:12Z">
+              <Issue>
+               <Item>'ExecuteCommand.FxCopCommandFile'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FxCopOutpulFile">
+            <Messages>
+             <Message Id="Outpul" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2014-06-09 05:51:12Z">
+              <Issue Name="Member">
+               <Item>Outpul</Item>
+               <Item>'ExecuteCommand.FxCopOutpulFile'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Created="2014-06-09 05:51:12Z">
+              <Issue>
+               <Item>'ExecuteCommand.FxCopOutpulFile'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#FxCopRuleLibrary">
+            <Messages>
+             <Message TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211" Created="2014-06-09 05:51:12Z">
+              <Issue>
+               <Item>'ExecuteCommand.FxCopRuleLibrary'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#WSPExtractedFolder">
+            <Messages>
+             <Message Id="WSP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2014-06-09 05:51:12Z">
+              <Issue Name="Member">
+               <Item>WSP</Item>
+               <Item>'ExecuteCommand.WSPExtractedFolder'</Item>
+               <Item>Wsp</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Rules>
+   <Rule TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227">
+    <Resolution Name="Default">Change {0} to be read-only by removing the property setter.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002">
+    <Resolution Name="Default">Change {0} in {1} to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+    <Resolution Name="Assembly">Correct the casing of '{0}' in assembly name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="Namespace">Correct the casing of '{0}' in namespace name '{1}' by changing it to '{2}'.</Resolution>
+    <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+    <Resolution Name="Assembly">Remove the underscores from assembly name {0}.</Resolution>
+    <Resolution Name="Namespace">Remove the underscores from namespace name '{0}'.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+    <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+    <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   </Rule>
+   <Rule TypeName="MembersShouldNotExposeCertainConcreteTypes" Category="Microsoft.Design" CheckId="CA1059">
+    <Resolution Name="Xml">Modify member {0} so that it no longer exposes the concrete type {1}. Use IXPathNavigable to represent XML data sources.</Resolution>
+   </Rule>
+   <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+    <Resolution Name="Default">Do not nest type {0}. Alternatively, change its accessibility so that it is not externally visible.</Resolution>
+   </Rule>
+   <Rule TypeName="NonConstantFieldsShouldNotBeVisible" Category="Microsoft.Usage" CheckId="CA2211">
+    <Resolution Name="Default">Consider making {0} non-public or a constant.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
